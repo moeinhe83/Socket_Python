@@ -19,8 +19,8 @@ def start_server():
         if request.lower() == "close":
             client_socket.send("Close".encode("utf-8"))
             break
-        print(f"Recevied = {request}")
-        client_socket.send("ACCEPTED".encode("utf-8"))
+        print(f"[*] Recevied = {request}")
+        client_socket.send("[*] ACCEPTED".encode("utf-8"))
 
     client_socket.close()
     server.close()
