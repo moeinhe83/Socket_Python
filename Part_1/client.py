@@ -10,3 +10,14 @@ def start_client():
 
     while True:
         message = input("[*] Enter Message = ")
+        client.send(message.encode("utf-8")[:1024])
+        response = client.recv(1024)
+        response = response.decode("utf-8")
+        if response.lower() == "close":
+            break
+        print(f"[*] Received = {response}")
+
+    client.close()
+
+
+start_client()
