@@ -1,4 +1,4 @@
-[ * ] Project Name = Socket Writing In Python Course
+[*] Project Name = Socket Writing In Python Course
 
 [*] Description = This Repository For Socket Writing In Python Course moeinit.com Website (YouTube)
 
@@ -27,6 +27,7 @@
 ==================================================
 
 Finish
+
 
 
 
