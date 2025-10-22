@@ -24,3 +24,10 @@ def domain_scan(domain, start_port, end_port):
     ip = socket.gethostbyname(domain)
     tcp_scan(ip, start_port, end_port)
     print(f'[*] Finish Scan Port : {domain}')
+
+
+if __name__ == '__main__':
+    socket.setdefaulttimeout(0.1)
+    if len(sys.argv) < 4:
+        print('Usage: ./port_scanner.py <ip> <start port> <end end>')
+        print('Usage: ./port_scanner.py <domain> <start port> <end port> -n')
