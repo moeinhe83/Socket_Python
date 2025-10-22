@@ -17,3 +17,10 @@ def ip_scan(ip, start_port, end_port):
     print(f'[*] Start Scan Port : {ip}')
     tcp_scan(ip, start_port, end_port)
     print(f'[*] Finish Scan Port : {ip}')
+
+
+def domain_scan(domain, start_port, end_port):
+    print(f'[*] Start Scan Port : {domain}')
+    ip = socket.gethostbyname(domain)
+    tcp_scan(ip, start_port, end_port)
+    print(f'[*] Finish Scan Port : {domain}')
