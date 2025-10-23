@@ -30,7 +30,7 @@ if __name__ == '__main__':
     socket.setdefaulttimeout(0.1)
     if len(sys.argv) < 4:
         print('[*] Usage: python port_scanner.py <ip> <start port> <end port>')
-        print('[*] Usage: python port_scanner.py <domain> <start port> <end port>')
+        print('[*] Usage: python port_scanner.py <domain> <start port> <end port> -n')
     elif len(sys.argv) >= 4:
         name = sys.argv[1]
         start_port = int(sys.argv[2])
