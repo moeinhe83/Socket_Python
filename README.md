@@ -44,7 +44,18 @@
 
 ==================================================
 
+[*] Part_3 Directory => port_scanner.py
+
+[*] For Run server.py File
+
+[*] Usage: python port_scanner.py <ip> <start port> <end port>
+
+[*] Usage: python port_scanner.py <domain> <start port> <end port> -n
+
+==================================================
+
 Finish
+
 
 
 
